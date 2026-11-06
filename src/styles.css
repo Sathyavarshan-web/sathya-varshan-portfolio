@@ -209,3 +209,34 @@
     height: 270px;
   }
 }
+
+/* Navbar actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 15px;
+  border: 1px solid rgba(137, 163, 255, 0.55);
+  border-radius: 12px;
+  color: #fff;
+  background: rgba(105, 125, 255, 0.12);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+  transform: translateY(-2px);
+  background: rgba(105, 125, 255, 0.25);
+  border-color: #a8b8ff;
+  box-shadow: 0 8px 25px rgba(105, 125, 255, 0.2);
+}

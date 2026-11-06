@@ -25,7 +25,20 @@ function App() {
       <a className="brand" href="#home"><span className="brand-mark">SV</span><span>SATHYA<span className="brand-dot">.</span></span></a>
       <button className="menu-toggle" onClick={()=>setMenuOpen(!menuOpen)} aria-label="Toggle menu">{menuOpen?<X/>:<Menu/>}</button>
       <nav className={menuOpen?'nav-links open':'nav-links'}>{nav.map(item=><a key={item} href={`#${item.toLowerCase()}`} onClick={()=>setMenuOpen(false)}>{item}</a>)}</nav>
-      <a className="nav-cta" href={`mailto:${profile.email}`}>Let's connect <ArrowUpRight size={15}/></a>
+      <div className="nav-actions">
+  <a
+    className="resume-button"
+    href="/documents/Sathya_Varshan_Resume.pdf"
+    download="Sathya_Varshan_Resume.pdf"
+  >
+    <ArrowDown size={15} />
+    Download Resume
+  </a>
+
+  <a className="nav-cta" href={`mailto:${profile.email}`}>
+    Let's connect <ArrowUpRight size={15}/>
+  </a>
+</div>
     </header>
 
     <main>
