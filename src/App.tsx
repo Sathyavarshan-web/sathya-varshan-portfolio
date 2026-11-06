@@ -23,7 +23,7 @@ function App() {
     <div className="ambient ambient-one" style={{left:`${pointer.x * .018}px`, top:`${pointer.y * .018}px`}} />
     <div className="ambient ambient-two" />
     <header className="topbar">
-      <a className="brand" href="#home"><span className="brand-mark">SV</span><span>SATHYA<span className="brand-dot">.</span></span></a>
+      <a className="brand" href="#home"><span className="brand-mark">SV</span><span>SATHYAVARSHAN<span className="brand-dot">.</span></span></a>
       <button className="menu-toggle" onClick={()=>setMenuOpen(!menuOpen)} aria-label="Toggle menu">{menuOpen?<X/>:<Menu/>}</button>
       <nav className={menuOpen?'nav-links open':'nav-links'}>{nav.map(item=><a key={item} href={`#${item.toLowerCase()}`} onClick={()=>setMenuOpen(false)}>{item}</a>)}</nav>
       <div className="nav-actions">
@@ -183,7 +183,7 @@ function App() {
         <div className="cert-list">{certifications.map((cert,i)=><div className="cert-row" key={cert.title}><span className="cert-index">0{i+1}</span><div><h3>{cert.title}</h3><p>{cert.issuer} · {cert.status}</p></div><ExternalLink size={17}/></div>)}</div>
       </section>
 
-      <section className="contact-section section-wrap" id="contact"><div className="contact-panel"><span className="eyebrow">HAVE AN IDEA OR AN OPPORTUNITY?</span><h2>Let's make something<br/><span className="gradient-text">meaningful.</span></h2><a className="button button-primary" href={`mailto:${profile.email}`}><Mail size={17}/> Get in touch <ArrowUpRight size={17}/></a><p>Replace the placeholder email in <code>src/content.ts</code> before publishing.</p></div></section>
+      <section className="contact-section section-wrap" id="contact"><div className="contact-panel"><span className="eyebrow">HAVE AN IDEA OR AN OPPORTUNITY?</span><h2>Let's make something<br/><span className="gradient-text">meaningful.</span></h2><a className="button button-primary" href={`mailto:${profile.email}`}><Mail size={17}/> Get in touch <ArrowUpRight size={17}/></a><p>sathyavarshan0@gmail.com<code></code> </p></div></section>
     </main>
     <footer className="footer section-wrap"><a className="brand" href="#home"><span className="brand-mark">SV</span><span>SATHYA<span className="brand-dot">.</span></span></a><span>Designed to grow. Built to learn. © {new Date().getFullYear()} {profile.name}</span><a href="#home">Back to top ↑</a></footer><Analytics />
   </div>;

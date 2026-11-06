@@ -1,10 +1,10 @@
 // Edit this file to update the text shown across your portfolio.
 export const profile = {
-  name: 'Sathya Varshan',
+  name: 'SathyaVarshan',
   role: 'AI & Data Science Student',
   tagline: 'Aspiring AI & Data Science professional passionate about technology, problem solving and creating meaningful digital expiriences.',
   location: 'Coimbatore, India',
-  email: 'sathyavarshan0@gmail.com', //
+  email: 'sathyavarshan0@gmail.com',
   linkedin: 'https://www.linkedin.com/in/sathya-varshan-720aa4306',
   github: 'https://github.com/Sathyavarshan-web',
   about: 'I am a final-year B.Tech student in Artificial Intelligence and Data Science. I am interested in software development, data, and practical applications of AI. I enjoy learning, collaborating, and taking responsibility in student activities.'
