@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import { ArrowDown, ArrowUpRight, Code2, Globe, Mail, Menu, X, Sparkles, Layers3, ExternalLink } from 'lucide-react';
 import { profile, skills, experience, projects, certifications } from './content';
 
@@ -184,7 +185,7 @@ function App() {
 
       <section className="contact-section section-wrap" id="contact"><div className="contact-panel"><span className="eyebrow">HAVE AN IDEA OR AN OPPORTUNITY?</span><h2>Let's make something<br/><span className="gradient-text">meaningful.</span></h2><a className="button button-primary" href={`mailto:${profile.email}`}><Mail size={17}/> Get in touch <ArrowUpRight size={17}/></a><p>Replace the placeholder email in <code>src/content.ts</code> before publishing.</p></div></section>
     </main>
-    <footer className="footer section-wrap"><a className="brand" href="#home"><span className="brand-mark">SV</span><span>SATHYA<span className="brand-dot">.</span></span></a><span>Designed to grow. Built to learn. © {new Date().getFullYear()} {profile.name}</span><a href="#home">Back to top ↑</a></footer>
+    <footer className="footer section-wrap"><a className="brand" href="#home"><span className="brand-mark">SV</span><span>SATHYA<span className="brand-dot">.</span></span></a><span>Designed to grow. Built to learn. © {new Date().getFullYear()} {profile.name}</span><a href="#home">Back to top ↑</a></footer><Analytics />
   </div>;
 }
 function SectionHeading({number,kicker,title}:{number:string;kicker:string;title:string}) { return <div className="section-heading"><span className="section-number">{number}</span><div><span className="eyebrow">{kicker}</span><h2>{title}</h2></div></div> }
