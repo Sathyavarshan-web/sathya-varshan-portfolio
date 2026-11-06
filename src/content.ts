@@ -37,15 +37,15 @@ export const experience = [
   }
 ];
 
-
 export const projects = [
   {
-    title: 'Projects Coming Soon',
-    category: 'Portfolio in Progress',
+    title: 'Personal Portfolio Website',
+    category: 'Frontend Development',
     description:
-      'I am currently developing my technical skills and preparing to build practical projects in Artificial Intelligence, Data Science and Web Development.',
-    tags: ['Artificial Intelligence', 'Python', 'Data Science'],
-    link: 'https://github.com/Sathyavarshan-web'
+      'A personal portfolio website showcasing my skills, experience and professional journey in Artificial Intelligence and Data Science.',
+    tags: ['React', 'TypeScript', 'Vite', 'Framer Motion'],
+    link: 'https://github.com/Sathyavarshan-web',
+    live: 'https://sathya-varshan-portfolio.vercel.app'
   }
 ];
 

@@ -108,7 +108,73 @@ function App() {
 
       <section className="section-wrap content-section" id="projects">
         <SectionHeading number="04" kicker="MY PROJECT JOURNEY" title="Ideas I'm preparing to bring to life."/>
-        <div className="project-grid">{projects.map((project,i)=><motion.article className="project-card" key={project.title} initial={{opacity:0,y:24}} whileInView={{opacity:1,y:0}} viewport={{once:true}}><div className="project-visual"><span>0{i+1}</span><div className="project-orb"><Layers3 size={42}/></div><span className="project-type">{project.category}</span></div><div className="project-body"><h3>{project.title}</h3><p>{project.description}</p><div className="tag-row">{project.tags.map(tag=><span key={tag}>{tag}</span>)}</div><a href={project.link} className="text-link">View details <ArrowUpRight size={15}/></a></div></motion.article>)}</div>
+       
+<div className="project-grid">
+  {projects.map((project, i) => (
+    <motion.article
+      className="project-card glass-project-card"
+      key={project.title}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: i * 0.15 }}
+      whileHover={{ y: -8 }}
+    >
+      <div className="glass-project-visual">
+        <div className="project-topline">
+          <span>PROJECT 0{i + 1}</span>
+          <span className="project-status">
+            PERSONAL PROJECT
+          </span>
+        </div>
+
+        <div className="project-glass-icon">
+          <Layers3 size={48} />
+        </div>
+
+        <span className="project-category">
+          {project.category}
+        </span>
+      </div>
+
+      <div className="project-body">
+        <h3>{project.title}</h3>
+
+        <p>{project.description}</p>
+
+        <div className="tag-row">
+          {project.tags.map(tag => (
+            <span key={tag}>{tag}</span>
+          ))}
+        </div>
+
+        <div className="glass-project-links">
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
+            className="text-link"
+          >
+            <Code2 size={16} />
+            GitHub
+            <ArrowUpRight size={15} />
+          </a>
+
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noreferrer"
+            className="text-link"
+          >
+            Live Website
+            <ExternalLink size={15} />
+          </a>
+        </div>
+      </div>
+    </motion.article>
+  ))}
+</div>
+
       </section>
 
       <section className="section-wrap content-section" id="certifications">

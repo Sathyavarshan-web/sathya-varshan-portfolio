@@ -240,3 +240,146 @@
   border-color: #a8b8ff;
   box-shadow: 0 8px 25px rgba(105, 125, 255, 0.2);
 }
+
+/* ==================================
+   GLASSMORPHISM PROJECT SHOWCASE
+================================== */
+
+.glass-project-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(151, 170, 255, 0.20);
+  border-radius: 22px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.09),
+    rgba(255, 255, 255, 0.025)
+  );
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.22);
+  transition: border-color 0.35s ease,
+              box-shadow 0.35s ease;
+}
+
+.glass-project-card:hover {
+  border-color: rgba(137, 163, 255, 0.65);
+  box-shadow: 0 20px 55px rgba(91, 112, 255, 0.16);
+}
+
+.glass-project-visual {
+  position: relative;
+  min-height: 230px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 50% 55%,
+      rgba(112, 119, 255, 0.24),
+      transparent 55%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(75, 93, 180, 0.20),
+      rgba(17, 25, 49, 0.55)
+    );
+}
+
+.project-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #b7c4ff;
+}
+
+.project-status {
+  color: #91e6cb;
+}
+
+.project-glass-icon {
+  align-self: center;
+  width: 110px;
+  height: 110px;
+  display: grid;
+  place-items: center;
+  color: #c5ceff;
+  border: 1px solid rgba(192, 204, 255, 0.35);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 40px rgba(111, 125, 255, 0.18);
+}
+
+.project-category {
+  font-size: 12px;
+  color: #c4ceff;
+}
+
+.glass-project-card .project-body {
+  padding: 25px;
+}
+
+.glass-project-card .project-body h3 {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.glass-project-card .project-body p {
+  color: #aab3ca;
+  line-height: 1.8;
+}
+
+.glass-project-card .tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 20px 0;
+}
+
+.glass-project-card .tag-row span {
+  padding: 7px 11px;
+  border: 1px solid rgba(145, 164, 255, 0.23);
+  border-radius: 30px;
+  background: rgba(118, 137, 255, 0.08);
+  color: #c5ceff;
+  font-size: 11px;
+}
+
+.glass-project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.glass-project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #c2ceff;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.glass-project-links a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .glass-project-visual {
+    min-height: 190px;
+  }
+
+  .glass-project-card .project-body {
+    padding: 20px;
+  }
+
+  .glass-project-links {
+    gap: 15px;
+  }
+}
